@@ -13,19 +13,22 @@ public class Voiture extends Vehicule {
     public String getCouleur() {
         return couleur;
     }
+
     public int getNbCheveaux() {
         return nb_cheveaux;
     }
+
     public void setCouleur(String couleur) {
         this.couleur = couleur;
     }
+
     public void setNbCheveaux(int nb_cheveaux) {
         this.nb_cheveaux = nb_cheveaux;
     }
 
-    @Override
-    public double calculerPrix(){
-        return nb_cheveaux * this.getTarif();
+    public void afficherDescription() {
+        System.out.println("Je suis une voiture de marque " + getMarque() + ". Ma couleur est " + couleur);
+
     }
 
 }
